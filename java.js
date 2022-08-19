@@ -89,6 +89,9 @@ const equalsInput = document.querySelector('#equals')
 equalsInput.addEventListener('click', calculate)
 
 function calculate () {
+    if (calculationArray[0]===undefined) {
+        return
+    }
     calculationArray.push(displayText.join(''))
     process = operate (calculationArray)
     results = Number(process.toFixed(8))
