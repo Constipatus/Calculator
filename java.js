@@ -52,7 +52,7 @@ intInput.forEach(button => {
       } else if (displayText[0]===0) {
         rmvDisplay ()
     } 
-      displayText.push(Number(e.target.id))
+      displayText.push(e.target.id)
       displayScreen.textContent = displayText.join('')
     })
 })
