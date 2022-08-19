@@ -89,7 +89,8 @@ equalsInput.addEventListener('click', calculate)
 function calculate () {
     calculationArray.push(displayText.join(''))
     process = operate (calculationArray)
-    results = process.toFixed(8)
+    results = Number(process.toFixed(8))
+    
     rmvDisplay ()
     rmvOperators ()
     rmvCalcs ()
