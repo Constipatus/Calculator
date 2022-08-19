@@ -1,0 +1,108 @@
+body {
+    width: 100%;
+    margin: 0px;
+}
+
+#header {
+    background-color: gray;
+    color: azure;
+    padding: 16px;
+    font-size: 48px;
+    text-align: center;
+}
+
+
+#calcContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 223, 223);
+}
+
+#calcBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px;
+    border-radius: 16px;
+    border-style: groove;
+    border-color: darkgrey;
+    width: 480px;
+    height: 640px;
+    margin: 24px;
+    background-color:#778cffa4;
+}
+
+#calcDisplay {}
+
+#display {
+    background-color: rgb(196, 255, 107);
+    font-size: 36px;
+    width: 360px;
+    Height: 60px;
+    text-align: center;
+    padding-top: 16px;
+    border-color: bisque;
+    border: 8px;
+    border-style:ridge;
+}
+
+.calcGridContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calcInputs {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    width: 360px;
+    height: 120px;
+}
+.calcButton,
+.equalsButton {
+    width: 60px;
+    height: 60px;
+    background-color: lightcoral;
+    border-radius: 16px;
+    font-size: 20px;
+}
+#equals {
+    background-color: rgb(214, 55, 55);
+}
+
+#calcNumbers {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 20px;
+    width: 280px;
+    Height: 380px;
+}
+
+.intButton,
+.clearButton {
+    width: 80px;
+    height:80px;
+    background-color: lightskyblue;
+    border-radius: 20px;
+    font-size: 28px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#clear {
+    background-color: lightsalmon;
+}
+
+#footer {
+    background-color: gray;
+    color: azure;
+    padding: 16px;
+    font-size: 48px;
+    text-align: center;
+}

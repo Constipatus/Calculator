@@ -9,30 +9,38 @@
     <script src="java.js" defer></script>
 </head>
 <body>
-    <div id = "calcBox">
-        <div id = "calcDisplay">
-            <div id ="display">0</div>
-            <button class="clearButton" id="clear">clear</button>
+    <div id = "header">Calculator</div>
+    <div id= "calcContainer">
+        <div id = "calcBox">
+            <div id = "calcDisplay">
+                <div id ="display">0</div>
+                
+            </div>
+            <div class = "calcGridContainer">
+                <div id = "calcInputs">
+                    <button class = "calcButton" id="add">+</button>
+                    <button class = "calcButton" id="subtract">-</button>
+                    <button class = "calcButton" id="multiply">x</button>
+                    <button class = "calcButton" id="divide">/</button>
+                    <button class = "equalsButton" id="equals">=</button>
+                </div>
+                <div id = "calcNumbers">
+                    <button class = "intButton" id="7">7</button>
+                    <button class = "intButton" id="8">8</button>
+                    <button class = "intButton" id="9">9</button>
+                    <button class = "intButton" id="4">4</button>
+                    <button class = "intButton" id="5">5</button>
+                    <button class = "intButton" id="6">6</button>
+                    <button class = "intButton" id="1">1</button>
+                    <button class = "intButton" id="2">2</button>
+                    <button class = "intButton" id="3">3</button>
+                    <button class = "intButton" id=".">.</button>
+                    <button class = "intButton" id="0">0</button>
+                    <button class="clearButton" id="clear">clear</button>  
+                </div>
+            </div>
         </div>
-        <div id = "calcInputs">
-            <button class = "calcButton" id="add">+</button>
-            <button class = "calcButton" id="subtract">-</button>
-            <button class = "calcButton" id="multiply">*</button>
-            <button class = "calcButton" id="divide">/</button>
-            <button class = "equalsButton" id="equals">=</button>
-        </div>
-        <div id = "calcNumbers"></div>
-            <button class = "intButton" id="7">7</button>
-            <button class = "intButton" id="8">8</button>
-            <button class = "intButton" id="9">9</button>
-            <button class = "intButton" id="4">4</button>
-            <button class = "intButton" id="5">5</button>
-            <button class = "intButton" id="6">6</button>
-            <button class = "intButton" id="1">1</button>
-            <button class = "intButton" id="2">2</button>
-            <button class = "intButton" id="3">3</button>
-            <button class = "intButton" id="0">0</button>
-        </div>
-    </div>
+    </div> 
+    <div id = "footer">Copyright Questadilla</div>   
 </body>
 </html>

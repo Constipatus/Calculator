@@ -21,7 +21,6 @@ function operate (input) {
 
 //Arrays to hold and display values
 const displayText = []
-displayText [0]=0
 const calculationArray = []
 const operator= []
 
@@ -66,13 +65,16 @@ calcInput.forEach(button => {
     button.addEventListener('click', (e) => {
         if  ((displayText[0]===0) && (calculationArray[0]===undefined)) {
           return
+
       } else if ((operator[0]===undefined) && (calculationArray[0]===undefined)) {
           calculationArray.push(displayText.join(''))
           rmvDisplay()
           operator.push(e.target.id)
+
       }else if ((displayText[0]===undefined)) {
           rmvOperators ()
           operator.push(e.target.id)
+
       } else if ((operator[0]!==undefined) && (calculationArray[0]!==undefined)) {
           calculate ()
           operator.push(e.target.id) 
@@ -90,7 +92,6 @@ function calculate () {
     calculationArray.push(displayText.join(''))
     process = operate (calculationArray)
     results = Number(process.toFixed(8))
-    
     rmvDisplay ()
     rmvOperators ()
     rmvCalcs ()
